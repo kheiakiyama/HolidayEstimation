@@ -10,8 +10,6 @@ namespace Holiday
 			//50年の日付と休日かどうかの情報を出力します
 			var start = new DateTime(1984, 11, 15);
 			var end = start.AddYears(50);
-			//var start = new DateTime(2016, 11, 15);
-			//var end = start.AddYears(1);
 			var span = end - start;
 			var filename = "holiday.csv";
 			using (StreamWriter sw = new StreamWriter(filename))
